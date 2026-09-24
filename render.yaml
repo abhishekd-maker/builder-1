@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: opus-home-twin
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: KIRI_API_KEY
+        sync: false
+      - key: NODE_VERSION
+        value: "22"

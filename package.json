@@ -1,0 +1,11 @@
+{
+  "name": "opus-home-twin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Opus Home Twin: upload a room video, get a 3D room you can repaint",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "mock": "MOCK=1 node server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "adm-zip": "^0.5.16", "busboy": "^1.6.0", "express": "^4.21.2", "ffmpeg-static": "^5.2.0" }
+}
